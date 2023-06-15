@@ -1,0 +1,26 @@
+ALGORITHM read_a_sentence
+VAR
+  str:STRING[]:= "Hallo Every One.";
+  n_char: INTEGER := 0;  //length_of_the_sentence;
+  n_words:= INTEGER := 0; // number_of_words;
+  n_spaces: INTEGER := 0;
+BEGIN
+    read(str);
+  FOR i FROM 0 TO str.length STEP 1 DO 
+    IF (str[i] = " ") THEN
+        n_spaces = n_spaces + 1
+    ELSE_IF (str[i] != ".")
+        n_char = n_char + 1
+    ELSE
+       srt = str + 1 ///not sure we must have ELSE or not
+    END_IF
+    
+  END_FOR
+  n_words = n_spaces + 1
+  n_char = str + 1 = "hallo every one" + 1
+ 
+ write("number of charackters is:"; n_char)
+ write("number of charackters is:"; n_words)
+
+
+END
